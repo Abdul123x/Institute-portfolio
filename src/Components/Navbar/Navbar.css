@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:ital,wght@0,100;0,600;0,800;1,900&family=Roboto:wght@300&family=Space+Grotesk:wght@300&display=swap');
+
+.logo-nav{
+
+    font-size: 2rem;
+    font-weight: 900;
+    cursor: pointer;
+}
+.logo-nav>span{
+    color: rgb(232, 108, 55);
+}
+
+.nav-container{
+    margin-top: 1rem;
+    margin-left: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+    
+}
+
+.menu{
+     list-style: none;
+     display: flex;
+     gap: 3rem;
+     font-size: 2rem;
+     font-weight: 500;
+}
+
+.menu>li:hover{
+    cursor: pointer;
+    color: rgb(232, 108, 55);
+}
+
+.btnn{
+    font-size: 1rem;
+    height: 3rem;
+    border-radius: 40px;
+    border: none;
+    background: rgb(232, 108, 55);
+    color: white;
+    cursor: pointer;
+    width: 10rem;
+
+}
+
+.btnn:hover{
+    background:black;
+}

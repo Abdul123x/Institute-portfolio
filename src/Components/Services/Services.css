@@ -1,0 +1,85 @@
+.services{
+    width: 100%;
+
+}
+
+.name-svr{
+    display: flex;
+    
+    margin: auto;
+    flex-direction: row;
+    font-size: 2rem;
+    font-weight: 900;
+    margin-left: 40%;
+}
+
+
+.loggo{
+    margin-top: 4rem;
+    height: 7rem;
+    width: 7rem;
+
+}
+
+.logoss{
+    display: flex;
+    gap: 10rem;
+    margin-left: 4.5rem;
+}
+
+.pinterest{
+    margin-left: 2rem;
+}
+
+.webb{
+    cursor: pointer;
+    height: 20rem;
+    width: 10rem;
+}
+
+.dropp{
+    cursor: pointer;
+    height: 20rem;
+    width: 10rem;
+}
+.graphics{
+    cursor: pointer;
+    height: 20rem;
+    width: 10rem;
+}
+
+.pint{
+    cursor: pointer;
+    height: 20rem;
+    width: 4rem;
+}
+
+.webtag{
+    border-radius: 5px;
+    background: rgb(226, 224, 224);
+    height: 9rem;
+    width: 10rem;
+    display: none;
+}
+
+.webtag>p{
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.webb :hover + .webtag{
+ 
+     display: block;
+ 
+}
+
+.dropp :hover +.webtag{
+    display: block;
+}
+.graphics :hover +.webtag{
+    display: block;
+}
+.pint :hover +.webtag{
+    display: block;
+    
+}
