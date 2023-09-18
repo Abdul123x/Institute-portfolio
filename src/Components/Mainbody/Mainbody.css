@@ -4,11 +4,12 @@
     margin-top: 13rem;
     height: 60vh;
     width: 100%;
+    display: flex;  
 }
 
 .left{
    margin-left: 3rem;
-   margin-top: 6rem;
+   margin-top: 1rem;
 }
 
 .left>:nth-of-type(1){
@@ -45,6 +46,86 @@
 .workwithus:hover{
    background-color:  black ;
 }
+
+
+
+
+/* right */
+.w-right {
+    position: relative;
+  }
+  
+  .w-mainCircle {
+    left: 15rem;
+    position: relative;
+    width: 22rem;
+    height: 22rem;
+    border-radius: 100%;
+    box-shadow:0px 0px 10px 5px rgba(187, 185, 185, 0.5);
+    top: 2rem;
+    background:rgb(232, 108, 55);
+    /* darkMode */
+    z-index: 2;
+  }
+  .w-mainCircle > * {
+    position: absolute;
+  }
+  .w-mainCircle > :nth-child(1) {
+    top: -2rem;
+    left: 8rem;
+  }
+  .w-mainCircle > :nth-child(2) {
+    left: -2rem;
+    top: 8rem;
+  }
+  .w-mainCircle > :nth-child(3) {
+    left: 8rem;
+    top: 8rem;
+  }
+  .w-mainCircle > :nth-child(4) {
+    left: 18rem;
+    top: 8rem;
+  }
+  .w-mainCircle > :nth-child(5) {
+    left: 8rem;
+    top: 18rem;
+  }
+  .w-secCircle {
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    border-radius: 100%;
+    border: 5px solid #ebebeb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: "none";
+    box-shadow: 0px 0px 10px 5px rgba(187, 185, 185, 0.5);
+    background: white;
+  }
+  
+  .w-secCircle > img {
+    transform: scale(0.6);
+  }
+  
+  .w-backCircle {
+    position: absolute;
+    height: 13rem;
+    width: 13rem;
+    border-radius: 100%;
+    /* darkMode */
+    z-index: 1;
+  }
+  .blueCircle {
+    background: black;
+    left: 22rem;
+    top: 0rem;
+  }
+  .yellowCircle {
+    background: rgb(219, 133, 87);
+    left: 22rem;
+    top: 8rem;
+  }
 
 
 

@@ -8,6 +8,7 @@ import Testimonial from './Components/Testimonial/Testimonial';
 import Footer from './Components/Footer/Footer'
 import About from './Components/About/About'
 import Contact from './Components/Contact/Contact'
+import Photos from './Components/Photos/Photos'
 
 const App = () => {
   return (
@@ -15,11 +16,12 @@ const App = () => {
      <div>
       
        
-      {/* <Navbar/>
+      <Navbar/>
       <Mainbody/>
       <Services/>
-      <Projects/>
-      <Letstalknum/>
+      {/* <Photos/>
+      <Projects/> */}
+      {/* <Letstalknum/>
       <Testimonial/>
       <Footer/> */}
     
@@ -28,7 +30,7 @@ const App = () => {
       {/* About section */}
       {/* <About/> */}
 
-      <Contact/>
+      {/* <Contact/> */}
     
      </div>
 
