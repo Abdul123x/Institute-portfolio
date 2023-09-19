@@ -43,3 +43,36 @@
     background: black !important;
 
 }
+
+
+
+
+@media (max-width: 480px) {
+    .testimonial {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  
+    .xard {
+      height: 15rem;
+    }
+  
+    .imaga1 {
+        margin-top: 3rem;
+      height: 4rem;
+      width: 4rem;
+    }
+  
+    .xard > h3 {
+      font-size: 1.5rem;
+      margin-left: 7rem;
+    }
+  
+    .xard > p {
+        margin-top: 2rem;
+      font-size: 0.8rem;
+    }
+  }
+
+  
+  

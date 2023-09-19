@@ -130,4 +130,27 @@
 
 
 
+  @media screen and (max-width:480px) {
+    .maincontainer{
+      margin-top: -4rem;
+      flex-direction: column;
+    }
+    .w-right{
+      top: 3rem;
+      left: -12.5rem;
+    }
+      .w-mainCircle{
+        height: 19rem;
+        width: 19rem;
+      }
+      .w-secCircle{
+        height: 3rem;
+        width: 3rem;
+      }
+      .w-secCircle > img {
+        transform: scale(0.3);
+      }
+  }
+
+
 

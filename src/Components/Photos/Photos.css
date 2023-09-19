@@ -88,6 +88,7 @@
 }
 
 .card2ss>p{
+    display: flex;
     margin-top: 2rem;
     margin-left: 1rem;
 }
@@ -156,3 +157,28 @@
     background-position: center center;
 }
 
+
+
+
+@media screen and (max-width:480px) {
+    .projectsss{
+        margin-top: 45rem;
+    }
+    .cardsss{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .heading22ss>p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        margin-left: 2rem;
+    }
+
+    
+  
+    
+}

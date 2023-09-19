@@ -5,7 +5,7 @@
     margin-left: 7.5rem;
     box-shadow: 0px 0px 10px 5px rgba(187, 185, 185, 0.5);
     display: flex;
-
+    
 }
 
 .namem{
@@ -121,3 +121,95 @@ textarea{
 
 
 
+
+
+@media screen and (max-width:480px) {
+    .contactus{
+        
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        gap: 1rem;
+    }
+    .namem{
+        margin-left: 3rem;
+        margin-top: 3rem;
+        font-size: 1.5rem;
+        font-weight: 900;
+    }
+
+    .phone-ww{
+        height: 3rem;
+    width: 22rem;
+    
+    }
+    .phone-ww a>img{
+        margin-left: .5rem;
+        margin-top: -.5rem;
+        height:2rem;
+        width: 2rem;
+        
+    }
+
+    .phone-ww a> span{
+        color: black;
+        margin-left: 2rem;  
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    /* right */
+    .rightside{
+        margin-top: 1rem;
+        margin-left: 2.5rem;
+        
+    }
+
+    .inputs{
+        height: 1.5rem;
+        width: 22rem;
+        border-radius: 5px;
+        background: rgb(240, 240, 240);
+        outline: none;
+        border: none;
+        border: 1px solid  rgb(227, 227, 227);
+        font-size: 1rem;
+
+    }
+
+    input::placeholder{
+        font-size: 1rem;
+        padding: 1rem;
+        
+    }
+    .inputs-company{
+        height: 1.5rem;
+        width: 22rem;
+        border-radius: 5px;
+        background: rgb(240, 240, 240);
+        outline: none;
+        border: none;
+        border: 1px solid  rgb(227, 227, 227);
+        font-size: 1rem;  
+        margin-top: 1rem;
+    }
+    textarea{
+        margin-top: 1rem;
+        outline: none;
+        width: 22rem;
+        background: rgb(240, 240, 240);
+        border: 1px solid  rgb(227, 227, 227);
+        font-size: 1.3rem;
+    }
+    .submit{
+        height: 2rem;
+        width: 22rem;
+       margin-top: .5rem;
+       border-radius: 10px;
+       outline: none;
+       border: none;
+       background:rgb(232, 108, 55) ;
+       font-size: 1rem;
+    }
+     
+}

@@ -8,7 +8,7 @@ import pinterest from "../../img/pinterest.png";
 const Services = () => {
   return (
     <div className="services" id="Services">
-      <div className="name-svr">OUR SERVICES</div>
+      <div className="name-svr"><span>OUR SERVICES</span></div>
 
       <br />
 

@@ -9,7 +9,7 @@ const About = () => {
   return (
        
       <div className="About-sec">
-        <Navbar/>
+        {/* <Navbar/> */}
 
         <div className="aboutbodr">
             <div className="leftsidede">
@@ -22,7 +22,7 @@ const About = () => {
             </div>
 
             <div className="rightsidees">
-                <img src={dash} alt="" />
+                <img className='imageabout' src={dash} alt="" />
             </div>
         </div>
         <Letstalknum/>

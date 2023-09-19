@@ -33,3 +33,25 @@
     display: flex;
 }
 
+
+
+
+
+
+@media screen and (max-width:480px) {
+
+    .headding{
+        margin-left: -1rem;
+        font-size: 1.5rem;
+        margin-left: 5rem;
+    }
+    .lets{
+        flex-direction: column;
+       
+    }
+    .textt{
+        margin-left: 6rem;
+    }
+    
+}
+

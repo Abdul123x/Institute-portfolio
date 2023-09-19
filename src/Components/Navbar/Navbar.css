@@ -11,6 +11,7 @@
 }
 
 .nav-container{
+    width: 100%;
     margin-top: 1rem;
     margin-left: 3rem;
     display: flex;
@@ -46,4 +47,45 @@
 
 .btnn:hover{
     background:black;
+}
+
+
+
+@media screen and (max-width: 480px) {
+        
+      .nav-container{
+        margin-top: 3rem;
+      } 
+      .logo-nav{
+        margin-top: -2rem;
+       display: flex;
+        
+      }
+      .barsicon{
+        display: flex;
+        justify-content: flex-end;
+        margin-left: 40rem;
+        margin-top: -20rem;
+        height: 1.5rem;
+        width: 1.5rem;
+      }
+      .logo-nav>span{
+        margin-left: 1rem;
+      }
+      
+     
+     .menu {
+       display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        width: 100%;
+        margin-left: 25rem;
+        
+
+     }
+
+     .button-nav{
+        display: none;
+     }
+    
 }

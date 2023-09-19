@@ -1,6 +1,7 @@
 .projects{
     margin-top: 10rem;
     height: 100vh;
+   
 }
 
 .heading{
@@ -122,4 +123,24 @@
 
 .explore:hover{
     background: rgb(235, 105, 49);
+}
+
+
+
+@media screen and (max-width:480px) {
+    .cards{
+        flex-direction: column;
+        
+    }
+
+    .card1{
+        margin-left: -.5rem;
+    }
+    .card2{
+        margin-left: -.5rem;
+    }
+    .card3{
+        margin-left: -.5rem;
+    }
+    
 }

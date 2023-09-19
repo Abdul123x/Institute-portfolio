@@ -16,19 +16,19 @@ const App = () => {
      <div>
       
        
-      <Navbar/>
-      <Mainbody/>
-      <Services/>
-      {/* <Photos/>
-      <Projects/> */}
-      {/* <Letstalknum/>
-      <Testimonial/>
-      <Footer/> */}
+      {/* <Navbar/> */}
+      {/* <Mainbody/> */}
+      {/* <Services/> */}
+      {/* <Photos/> */}
+      {/* <Projects/> */}
+      {/* <Letstalknum/> */}
+      {/* <Testimonial/> */}
+      {/* <Footer/> */}
     
 
 
       {/* About section */}
-      {/* <About/> */}
+      <About/>
 
       {/* <Contact/> */}
     

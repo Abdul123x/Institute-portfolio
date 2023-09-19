@@ -1,5 +1,7 @@
 import React from "react";
 import "./Navbar.css";
+import  { FaBars,  FaTimes } from "react-icons/fa"
+
 import { Link } from "react-scroll";
 const Navbar = () => {
   return (
@@ -21,10 +23,14 @@ const Navbar = () => {
               About
             </Link> </li>
         </ul>
+
+        {/* <FaBars className="barsicon"/> */}
+        {/* <FaTimes/> */}
       </div>
 
       <div className="button-nav">
-        <button className="btnn">Contact Us</button>
+      <button className="btnn">Contact Us</button>
+
       </div>
     </div>
   );

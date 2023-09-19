@@ -8,7 +8,7 @@ import Footer from "../Footer/Footer";
 const Contact = () => {
   return (
     <>
-    <Navbar/>
+    {/* <Navbar/> */}
     <div className="contactus">
         
       <div className="leftside">
@@ -44,7 +44,7 @@ const Contact = () => {
 
       </div>
     </div>
-    <Footer/>
+    {/* <Footer/> */}
     </>
   );
 };

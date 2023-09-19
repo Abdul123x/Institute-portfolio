@@ -60,3 +60,19 @@
     background-position: center;
     background-size: contain;
 }
+
+
+
+@media screen and (max-width:480px) {
+    .aboutbodr{
+        height: 130vh;
+        flex-direction: column;
+    }
+   
+
+    .rightsidees{
+        height: 20rem;
+        width: 80vw;
+        
+    }
+}

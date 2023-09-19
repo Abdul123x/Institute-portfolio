@@ -88,5 +88,23 @@
 
 
 
+@media screen and (max-width:480px) {
+    .cfooter{
+        flex-direction: column;
+        gap: 1rem;
+        margin-left: 3rem;
+    }
+
+    .cfooter{
+        margin-top: 55rem;
+        height: 200vh;
+
+    }
+    .block{
+        margin-top: -50rem;
+    }
+}
+
+
 
 
