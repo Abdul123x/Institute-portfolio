@@ -1,14 +1,30 @@
 import React from "react";
 import "./Navbar.css";
-import  { FaBars,  FaTimes } from "react-icons/fa"
+import  { FaBars } from "react-icons/fa"
 
 import { Link } from "react-scroll";
+import { useState } from "react";
+import Mobileview from "../Mobileview/Mobileview";
 const Navbar = () => {
+  const [show, setshow] = useState(false);
+
+  const toggle = () =>{
+      setshow(true);
+  }
   return (
     <div className="nav-container">
       <div className="logo-nav">
-        Retro <span>Commune</span>
+      {show && <Mobileview setshow = {setshow}/>}
+        Retro <span className="commune">Commune</span>
+       <div className="barsicon">
+       <FaBars className="barsssss"  onClick={toggle} />
+       </div>
       </div>
+       
+
+      
+      
+       
       <div className="menu-nav">
         <ul className="menu">
           <li>
@@ -24,10 +40,9 @@ const Navbar = () => {
             </Link> </li>
         </ul>
 
-        {/* <FaBars className="barsicon"/> */}
-        {/* <FaTimes/> */}
+        
       </div>
-
+      
       <div className="button-nav">
       <button className="btnn">Contact Us</button>
 

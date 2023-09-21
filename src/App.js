@@ -9,26 +9,27 @@ import Footer from './Components/Footer/Footer'
 import About from './Components/About/About'
 import Contact from './Components/Contact/Contact'
 import Photos from './Components/Photos/Photos'
+import Mobileview from './Components/Mobileview/Mobileview'
 
 const App = () => {
   return (
      
      <div>
       
-       
-      {/* <Navbar/> */}
-      {/* <Mainbody/> */}
-      {/* <Services/> */}
-      {/* <Photos/> */}
-      {/* <Projects/> */}
-      {/* <Letstalknum/> */}
-      {/* <Testimonial/> */}
-      {/* <Footer/> */}
+       {/* <Mobileview/> */}
+      <Navbar/>
+      {/* <Mainbody/>
+      <Services/>
+      <Photos/>
+      <Projects/>
+      <Letstalknum/>
+      <Testimonial/>
+      <Footer/> */}
     
 
 
       {/* About section */}
-      <About/>
+      {/* <About/> */}
 
       {/* <Contact/> */}
     
