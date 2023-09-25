@@ -1,31 +1,139 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:ital,wght@0,100;0,600;0,800;1,900&family=Roboto:wght@300&family=Space+Grotesk:wght@300&display=swap');
 
+.main{
+  width: 100%;
+  height: 50px;
+  
+
+}
+.nav-content{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px 10px 30px;
+
+}
+  
+
+.nav-logo{
+
+  font-size: 30px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.nav-logo>span{
+  color: rgb(232, 108, 55);
+}
+
+
+.menu{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  font-size: 18px;
+  font-weight: 700;
+
+}
+li{
+  cursor: pointer;
+  list-style: none;
+
+}
+
+
+.btnn{
+  font-size: 1rem;
+  font-weight: 700;
+  height: 3rem;
+  border-radius: 40px;
+  border: none;
+  background: rgb(232, 108, 55);
+  color: white;
+  cursor: pointer;
+  width: 10rem;
+  transition: background-color 0.5s ease-in-out; 
+
+}
+
+.btnn:hover{
+  background:black;
+}
+.nav-icon{
+ display: none;
+}
+
+@media screen and (max-width:358px){
+.nav-logo{
+  font-size: 20px;
+}
+}
+
+
+
+@media screen and (max-width:768px) {
+    .menu{
+      display: none;
+    }
+    .nav-button{
+      display: none;
+    }
+    .nav-icon{
+      visibility: visible;
+      display: block;
+    font-size: 20px;
+    font-weight: 700;
+     align-items: center;
+     cursor: pointer;
+    }
+    .nav-icon:hover{
+      color:   rgb(232, 108, 55);;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 .logo-nav{
 
-    font-size: 2rem;
-    font-weight: 900;
+    font-size: 30px;
+    font-weight: 700;
     cursor: pointer;
 }
 .logo-nav>span{
     color: rgb(232, 108, 55);
 }
 
-.nav-container{
-    width: 100%;
-    margin-top: 1rem;
-    margin-left: 3rem;
-    display: flex;
-    align-items: center;
-    gap: 10rem;
-    
+
+.nav-icon{
+  display: none;
 }
 
 .menu{
      list-style: none;
      display: flex;
+     align-items: center;
+     justify-content: center;
      gap: 3rem;
-     font-size: 2rem;
-     font-weight: 500;
+     font-size: 18px;
+     font-weight: 700;
 }
 
 .menu>li:hover{
@@ -35,6 +143,7 @@
 
 .btnn{
     font-size: 1rem;
+    font-weight: 700;
     height: 3rem;
     border-radius: 40px;
     border: none;
@@ -51,32 +160,28 @@
 
 
 
-@media screen and (max-width:768px) {
+ @media screen and (max-width:768px) {
+   
+    .nav-container{
+  
+      gap: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    
 
-  .menu{
-    display: none;
-  }
-   
+     
+    }
+    .logo-nav{
+      font-size: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    
+    }
+    .btnn{
+      display: none;
+    }
 
-  .logo-nav{
-    font-size: 1.5rem;
-    margin-left: -2rem;
-  }
-  .logo-nav{
-    display: flex;
-    gap: 1rem;
-   
-  }
-  .btnn{
-    display: none;
-  }
-  .nav-container{
-    width: 100%;
-    z-index: -1;
-   
-  }
-  .barsssss{
-    margin-left: 7rem;
-  }
- 
-}
+}  */

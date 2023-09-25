@@ -1,43 +1,26 @@
 import React from "react";
 import "./Projects.css";
-import project from "../../img/project.png";
+import { project } from "../Data/Data";
+import parse from "html-react-parser";
 const Projects = () => {
   return (
-    <div className="projects" id="Projects">
-      <div className="heading">Our Web Projects</div>
-
-      <div className="cards">
-        <div className="card1">
-          <img className="img11" src={project} alt="" />
-          <h1>Bug Tracker Product</h1>
-          <p>
-            Streamline software development with efficient bug tracking. Detect,
-            report, and resolve issues swiftly for enhanced project delivery and
-            client satisfaction.
-          </p>
-        </div>
-        <div className="card2">
-          <img className="img11" src={project} alt="" />
-          <h1>Bug Tracker Product</h1>
-          <p>
-            Streamline software development with efficient bug tracking. Detect,
-            report, and resolve issues swiftly for enhanced project delivery and
-            client satisfaction.
-          </p>
-        </div>
-        <div className="card3">
-          <img className="img11" src={project} alt="" />
-          <h1>Bug Tracker Product</h1>
-          <p>
-            Streamline software development with efficient bug tracking. Detect,
-            report, and resolve issues swiftly for enhanced project delivery and
-            client satisfaction.
-          </p>
-        </div>
+    <div className="project">
+      <div className="title">
+        Our <span> Projects</span> 
       </div>
-
-      <div className="explorebutton">
-        <button className="explore">Explore More Projects </button>
+      <div className="project-content">
+        {project.map(({ img, title, desc }, index) => {
+          return (
+            <div className="project-item" key={index}>
+              <img src={img} alt="" className="project-img" />
+              <span className="project-title">{parse(title)}</span>
+              <p className="project-desc">{desc}</p>
+            </div>
+          )  
+        })}
+      </div>
+      <div className="main-button">
+        <button className="project-button">Explore More Projects</button>
       </div>
     </div>
   );

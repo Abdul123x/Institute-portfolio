@@ -1,63 +1,48 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Services.css";
-import dropshipping from "../../img/drop-shipping.png";
-import graphicdesign from "../../img/graphicdesign.png";
-import webdevelopment from "../../img/Webdevelopment.png";
-import pinterest from "../../img/pinterest.png";
+import { service } from "../Data/Data";
+import parse from "html-react-parser"
 
 const Services = () => {
+
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);  
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
   return (
-    <div className="services" id="Services">
-      <div className="name-svr"><span>OUR SERVICES</span></div>
-
-      <br />
-
-      <div className="logoss">
-        <div className="webb">
-          <img className="loggo" src={webdevelopment} alt="" />
-          <p className="web">Web Development</p>
-          <div className="webtag">
-          <p>
-            &nbsp; &nbsp;&nbsp;We deliver <br />  &nbsp; responsive web <br />
-            &nbsp; apps, sites and a <br />  &nbsp; seamless mobile <br />  experience for iOS{" "}
-              <br />  &nbsp;  &nbsp; &nbsp; and Android
-            </p>
-          </div>
-        </div>
-        <div className="dropp">
-          <img className="loggo" src={dropshipping} alt="" />
-          <p className="dropshipping">Drop Shipping</p>
-          <div className="webtag">
-          <p>
-            &nbsp; &nbsp;&nbsp;We deliver <br />  &nbsp; responsive web <br />
-            &nbsp; apps, sites and a <br />  &nbsp; seamless mobile <br />   experience for iOS{" "}
-              <br />  &nbsp;  &nbsp; &nbsp; and Android
-            </p>
-          </div>
-        </div>
-        <div className="graphics">
-          <img className="loggo" src={graphicdesign} alt="" />
-          <p className="graphicdesign">Graphic Design</p>
-          <div className="webtag">
-          <p>
-            &nbsp; &nbsp;&nbsp;We deliver <br />  &nbsp; responsive web <br />
-            &nbsp; apps, sites and a <br />  &nbsp; seamless mobile <br />   experience for iOS{" "}
-              <br />  &nbsp;  &nbsp; &nbsp; and Android
-            </p>
-          </div>
-        </div>
-        <div className="pint">
-          <img className="loggo" src={pinterest} alt="" />
-          <p className="pinterest">Pinterest</p>
-          <div className="webtag">
-            <p>
-            &nbsp; &nbsp;&nbsp;We deliver <br />  &nbsp; responsive web <br />
-            &nbsp; apps, sites and a <br />  &nbsp; seamless mobile <br />   experience for iOS{" "}
-              <br />  &nbsp;  &nbsp; &nbsp; and Android
-            </p>
-          </div>
-        </div>
+    <div className="services">
+      <div className="title">   
+        Our <span> Services</span>   
       </div>
+      <div className="service-content"
+
+      >
+        {service.map(({ img, text, title }, index) => {   
+          return (
+            <>
+              <div className="service-item" key={index}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+              >
+                <img src={img} alt="" className="service-img" />
+                <span className="service-title">{title}</span>
+              {isHovered && <span className="text">{parse(text)}</span>}
+
+              </div>
+
+            </>
+
+
+          )
+        })}
+      </div>
+
     </div>
   );
 };

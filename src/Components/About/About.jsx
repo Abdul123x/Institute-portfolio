@@ -1,14 +1,13 @@
 import React from 'react'
-import Navbar from '../Navbar/Navbar'
 import './About.css'
 import dash from '../../img/dash.jpg'
 import Letstalknum from '../Letstalk/Letstalknum'
 import Photos from '../Photos/Photos'
-import Footer from '../Footer/Footer'
+
 const About = () => {
   return (
        
-      <div className="About-sec">
+      <div className="About-sec">   
         {/* <Navbar/> */}
 
         <div className="aboutbodr">
@@ -20,14 +19,13 @@ const About = () => {
                 </button>
 
             </div>
-
             <div className="rightsidees">
                 <img className='imageabout' src={dash} alt="" />
             </div>
         </div>
         <Letstalknum/>
         <Photos/>
-        <Footer/>
+      
       </div>
 
     )

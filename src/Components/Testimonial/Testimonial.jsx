@@ -36,7 +36,7 @@ const Testimonial = () => {
             technology was phenomenal. I have a visual of what my app{" "}
           </p>
         </div>
-        
+          
         <div>
           {" "}
           <div className="xard" id="card2">

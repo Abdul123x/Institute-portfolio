@@ -3,6 +3,7 @@
     width: 100%;
     background: rgb(232, 108, 55);
     display: flex;
+    margin-top: 5rem;
 }
 
 
@@ -13,7 +14,7 @@
 .leftsidede>span{
     font-weight: 900;
     font-size: 2rem;
-}
+}  
 .leftsidede>p{
     font-size: 1.5rem;
     color: #fff;

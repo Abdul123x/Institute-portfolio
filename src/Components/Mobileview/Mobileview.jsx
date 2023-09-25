@@ -1,20 +1,34 @@
 import React from 'react'
 import { FaTimes } from 'react-icons/fa'
 import "./MobileView.css"
-const Mobileview = ({setshow}) => {
-  return (
-      <div className="mobileview">
-         <div className="fatimes">
-         <FaTimes onClick={() =>{setshow(false)}} className='faaaa' />
+import { useNavigate } from 'react-router-dom'
+const Mobileview = ({ setshow }) => {
+  const navigate = useNavigate();
 
-         </div>
- 
-        <ul className='mobilemenu'>
-            <li><p>Home</p></li>
-            <li><p>About</p></li>
-            <li><p>Contact</p></li>
-        </ul>
+  return (
+    <div className="mobileview">
+      <div className="top">
+        <div className="logo">  
+          Retro <span className="commune">Commune</span>
+        </div>
+        <div className="fatimes">
+          <FaTimes onClick={() => { setshow(false) }} className='cross' />
+
+        </div>
+      </div>
+      <div className="middle">
+        <ul className='mobilemenu' onClick={() => { setshow(false) }}  >
+          <li onClick={() => navigate("/")}><p>Home</p></li>
        
+          <li onClick={() => navigate("/portfolio")}><p>Portfolio</p></li>
+          <li  onClick={() => navigate("/about")}><p>About</p></li>
+          <li onClick={() => navigate("/contact")}><p>Contact</p></li>
+        </ul>
+      </div>
+
+
+
+
     </div>
   )
 }

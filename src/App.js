@@ -1,41 +1,39 @@
-import React from 'react'
+import React  from 'react'
 import Navbar from './Components/Navbar/Navbar'
-import Mainbody from './Components/Mainbody/Mainbody'
-import Services from './Components/Services/Services'
-import Projects from './Components/Projects/Projects'
-import Letstalknum from './Components/Letstalk/Letstalknum';
-import Testimonial from './Components/Testimonial/Testimonial';
+import Home from './Components/Home/Home'
 import Footer from './Components/Footer/Footer'
 import About from './Components/About/About'
-import Contact from './Components/Contact/Contact'
-import Photos from './Components/Photos/Photos'
-import Mobileview from './Components/Mobileview/Mobileview'
+import Contact from "../src/Contact/Contact"
+import Projects from './Components/Projects/Projects'
+
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import "./App.css"
+
+
 
 const App = () => {
+
+
+
   return (
-     
-     <div>
-      
-       {/* <Mobileview/> */}
-      <Navbar/>
-      {/* <Mainbody/>
-      <Services/>
-      <Photos/>
-      <Projects/>
-      <Letstalknum/>
-      <Testimonial/>
-      <Footer/> */}
-    
 
+    <>
 
-      {/* About section */}
-      {/* <About/> */}
+      <BrowserRouter>
+        <Navbar />
+         <Routes>
+             <Route path='/' element={<Home/>}/>
+             <Route path='/about' element={<About/>}/>
+             <Route path='/contact' element={<Contact/>}/>
+             <Route path='/portfolio' element={<Projects/>}/>
+        </Routes>
+        <Footer />
+      </BrowserRouter> 
 
-      {/* <Contact/> */}
-    
-     </div>
+   
 
-    )
+    </>
+
+  )
 }
-
 export default App

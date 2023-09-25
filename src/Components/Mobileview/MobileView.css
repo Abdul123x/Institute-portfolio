@@ -5,45 +5,90 @@
 }
 
 .mobileview{
-    height: 100vh;
+    height: 100%;
     width: 100%;
-    background: rgb(232, 108, 55);
+    background: black;
+    padding: 15px;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(100%); 
+    animation: slideMenuPopUp 0.5s ease forwards;
 }
 
-.fatimes{
-    margin-left: 22rem;
-  
-}
-.faaaa{
-    height: 1.5rem;
-    width: 1.5rem;
-    margin-top: 1rem;
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
+
+.logo{
+    font-size: 25px;
+    font-weight:700;
+    color: white;
+
+}
+.logo>span{
+  color: rgb(232, 108, 55);
+
+}
+.cross{
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+.cross:hover{
+  color: rgb(232, 108, 55) ;
+}
+.middle{
+    margin-top: 5rem;
+    
+}
+.line{
+  width: 200px;
+  height: 2px;
+  color:  rgb(232, 108, 55) ;
+ 
+}
 .mobilemenu{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 10rem;
-    gap: 1.5rem;
-}
-.mobilemenu li{
+    gap: 1rem;
     list-style: none;
-    font-size: 2rem;
-    
-    height: 4rem;
-    width: 90%;
-    border: 2px solid black;
-    border-radius: 16px;
-    background: black;
-    
-}
-.mobilemenu li>p{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: .3rem;
+    font-size: 25px;
+    font-weight: 500;
     color: white;
-    
 }
+li{
+  transform: translateX(100%); 
+  animation: slideLiPopUp 2s ease forwards;
+}
+li:hover{
+  color: rgb(232, 108, 55);
+
+}
+
+
+@keyframes slideMenuPopUp {
+    0% {
+      transform: translateX(-100%);
+    }
+  
+    100% {
+      transform: translateX(-0%);
+    }
+  }
+
+  @keyframes slideLiPopUp {
+    0% {
+      transform: translateX(-100%);
+    }
+  
+    100% {
+      transform: translateX(-0%);
+    }
+  }

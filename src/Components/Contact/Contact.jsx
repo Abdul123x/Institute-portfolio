@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <>
     {/* <Navbar/> */}
-    <div className="contactus">
+    <div className="contactus">   
         
       <div className="leftside">
         <div className="namem">Contact Us!</div>

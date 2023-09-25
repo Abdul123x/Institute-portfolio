@@ -10,66 +10,55 @@ import {
 } from "@heroicons/react/outline"
 const Footer = () => {
     return (
-          <div className="cfooterwrapper">
-              <hr />
-  
-              <div className="cfooter">
-                  <div className="logo2">
-                      {/* <img src={logo} alt="" /> */}
-                      <span>Retro</span><p>Commune</p>
-
-                  </div>
-  
-                  <div className="block">
-                      <div className="details">
-                          <span>Contact Us</span>
-                          <span className='pngLine'>
-                              <LocationMarkerIcon className='icon'/>
-                              <span>111 north avenue orlando, FL 32801</span>
-                          </span>
-                          <span className='pngLine'>
-                              <PhoneIcon className='icon'/>
-                              <span>048 5582 77 </span>
-                          </span>
-                          <span className='pngLine'>
-                              <InboxIcon className='icon'/>
-                              <span>retrocommune@gmail.com </span>
-                          </span>
-                      </div>
-                  </div>
-                  <div className="block">
-                      <div className="details">
-                          <span>Accounts</span>
+        <>
+            <div className="footer">
+                <div className="footer-content">
+                    <div className="logo">
+                        <div className="footer-title">
+                            Retro <span>Communes</span>
+                        </div>
+                    </div>
+                    <div className="footer-item">
+                        <span>Contact Us</span>
+                        <span className='pngLine'>
+                            <LocationMarkerIcon className='icon' />
+                            <span>111 north avenue orlando, FL 32801</span>
+                        </span>
+                        <span className='pngLine'>
+                            <PhoneIcon className='icon' />
+                            <span>048 5582 77 </span>
+                        </span>
+                        <span className='pngLine'>
+                            <InboxIcon className='icon' />
+                            <span>retrocommune@gmail.com </span>
+                        </span>
+                    </div>
+                    <div className="footer-item">
+                    <span>Accounts</span>
                           <span className='pngLine'>
                               <LoginIcon className='icon'/>
                               <span>Sign in</span>
                           </span>
-                          
-                      </div>
-                  </div>
-                  <div className="block">
-                      <div className="details">
-                          <span>Company</span>
+                    </div>
+                    <div className="footer-item">
+                    <span>Company</span>
                           <span className='pngLine'>
                               <UsersIcon className='icon'/>
                               <span>About us</span>
                           </span>
-                          
-                      </div>
-                  </div>
-                  <div className="block">
-                      <div className="details">
-                          <span>Resources</span>
+                    </div>
+                    <div className="footer-item">
+                    <span>Resources</span>
                           <span className='pngLine'>
                               <LinkIcon className='icon'/>
                               <span>safety privacy & terms</span>
                           </span>
-                          
-                      </div>
-                  </div>
-              </div>
-          </div>
-      )
-  }
+                    </div>
+
+                </div>
+            </div>
+        </>
+    )
+}
 
 export default Footer
