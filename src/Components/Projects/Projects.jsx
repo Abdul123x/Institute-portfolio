@@ -30,7 +30,9 @@ const Projects = () => {
         })}
       </div>
       <div className="main-button">
-        <button className="project-button">Explore More Projects</button>
+        <button className="project-button" onClick={()=>{
+          navigate("/portfolio")
+        }}> Explore More Projects</button>
       </div>
     </div>
   );

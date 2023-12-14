@@ -8,7 +8,7 @@ import {
   FaPhoneSquareAlt,
   FaFacebookF,
   FaWhatsapp,
-  FaGithub,
+  FaInstagram,
   FaLinkedin
 } from "react-icons/fa";
 
@@ -68,7 +68,7 @@ const Contact = () => {
         <div className="contact--data">
           <h3 className="contact--title">Don't be Shy !</h3>
           <p className="contact--desc">
-            Feel free to get in touch with me .I am always open to discussing
+            Feel free to get in touch with us .We are always open to discussing
             new projects, creative ideas or opportunities to be part of your
             visions..
           </p>
@@ -76,31 +76,31 @@ const Contact = () => {
             <div className="info--item">
               <FaEnvelopeOpen className='info--icon' />
               <div>
-                <span className="info--title">Mail me</span>
-                <h4 className="info--desc">asadalihanif04@gmail.com</h4>
+                <span className="info--title">Mail us</span>
+                <h4 className="info--desc">betacommunes@gmail.com</h4>
               </div>
             </div>
             <div className="info--item">
               <FaPhoneSquareAlt className='info--icon' />
               <div>
-                <span className="info--title">Call  me</span>
-                <h4 className="info--desc">+923244773614</h4>
+                <span className="info--title">Contact Us</span>
+                <h4 className="info--desc">+923271519404</h4>
               </div>
             </div>
           </div>
 
 
           <div className="contact--socials">
-            <a href="https://www.facebook.com/asadalitech04" target="_blank" className="contact--social--links">
+            <a href="https://www.facebook.com/profile.php?id=61554057222085&mibextid=zLoPMf" target="_blank" className="contact--social--links">
               <FaFacebookF />
             </a>
-            <a href="https://wa.link/sbf5f6" target="_blank" className="contact--social--links">
+            <a href="https://wa.me/+923271519404" target="_blank" className="contact--social--links">
               <FaWhatsapp />
             </a>
-            <a href="https://github.com/AsadAliTech04" target="_blank" className="contact--social--links">
-              <FaGithub />
+            <a href="https://www.instagram.com/betacommunes/" target="_blank" className="contact--social--links">
+              <FaInstagram />
             </a>
-            <a href="https://www.linkedin.com/in/asad-ali-038242235" target="_blank" className="contact--social--links">
+            <a href="#" target="_blank" className="contact--social--links">
               <FaLinkedin />
             </a>
           </div>

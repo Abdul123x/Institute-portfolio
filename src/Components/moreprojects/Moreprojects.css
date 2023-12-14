@@ -1,15 +1,17 @@
-.project {
+.moreproject {
     width: 100%;
     height: 100%;
     margin-top: 7rem;
     padding: 10px 30px 10px 30px;
     display: flex;
     flex-direction: column;
+    
 }
 
-.project-content {
+.moreproject-content {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin-top: 4rem;
@@ -17,7 +19,7 @@
     align-content: center;
 }
 
-.project-item {
+.moreproject-item {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -34,12 +36,12 @@
 
 }
 
-.project-item:hover {
+.moreproject-item:hover {
     box-shadow: 0px 10px 20px rgb(164, 164, 164);
 
 }
 
-.project-img {
+.moreproject-img {
     width: 300px;
     cursor: pointer;
     height: 40%;
@@ -48,18 +50,18 @@
     background-size: cover;
 }
 
-.project-title {
+.moreproject-title {
 
     font-size: 30px;
     font-weight: 700;
     cursor: pointer;
 }
 
-.project-title>span {
+.moreproject-title>span {
     color: var( --purple-color);
 }
 
-.project-desc {
+.moreproject-desc {
 
     color: rgb(134, 130, 130);
     text-align: center;
@@ -68,7 +70,7 @@
 
 }
 
-.project-button {
+.moreproject-button {
 
     font-size: 1rem;
     font-weight: 700;
@@ -83,7 +85,7 @@
     transition: background-color 0.5s ease-in-out;
 }
 
-.main-button {
+.moremain-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -91,12 +93,12 @@
 
 }
 
-.project-button:hover {
+.moreproject-button:hover {
     background-color: black;
 }
 
 
-.project-btn {
+.moreproject-btn {
     position: absolute;
     bottom: 10px;
     right: 10px;
@@ -112,12 +114,12 @@
     transition: background-color 0.5s ease-in-out;
 }
 
-.project-btn:hover {
+.moreproject-btn:hover {
     background-color: black;
 }
 
 @media screen and (max-width:768px) {
-    .project-content {
+    .moreproject-content {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -125,7 +127,7 @@
         gap: 5rem;
     }
 
-    .project {
+    .moreproject {
         width: 100%;
         height: 100%;
         margin-top: 3rem;
@@ -137,12 +139,12 @@
 }
 
 @media screen and (max-width:320px) {
-    .project-item {
+    .moreproject-item {
         width: 30vh;
         margin: 0;
     }
 
-    .project-img {
+    .moreproject-img {
         width: 250px;
     }
 }

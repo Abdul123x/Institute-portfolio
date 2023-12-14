@@ -6,7 +6,8 @@ import {
     FaFacebookF,
     FaWhatsapp,
     FaGithub,
-    FaLinkedin
+    FaLinkedin,
+    FaInstagram
 } from "react-icons/fa";
 
 const Footer = () => {
@@ -19,30 +20,30 @@ const Footer = () => {
                     <div className="footer--info">
                             <FaPhoneSquareAlt className='footer-icon' />
                             <div>
-                                <span className="info--title">Call  me</span>
-                                <h4 className="info--desc">+923244773614</h4>
+                                <span className="info--title">Call Us</span>
+                                <h4 className="info--desc">+923271519404</h4>
                             </div>
                         </div>
                         <div className="footer--info">
                             <FaEnvelopeOpen className='footer-icon' />
                             <div>
-                                <span className="info--title">Mail me</span>
-                                <h4 className="info--desc">asadalihanif04@gmail.com</h4>
+                                <span className="info--title">Mail Us</span>
+                                <h4 className="info--desc">betacommunes@gmail.com</h4>
                             </div>
                         </div>
                        
                         {/* <span>Connect on Social</span> */}
                         <div className="footer--socials">
-                            <a href="https://www.facebook.com/asadalitech04" target="_blank" className="contact--social--links">
+                            <a href="https://www.facebook.com/profile.php?id=61554057222085&mibextid=zLoPMf" target="_blank" className="contact--social--links">
                                 <FaFacebookF />
                             </a>
-                            <a href="https://wa.link/sbf5f6" target="_blank" className="contact--social--links">
+                            <a href="https://wa.me/+923271519404" target="_blank" className="contact--social--links">
                                 <FaWhatsapp />
                             </a>
-                            <a href="https://github.com/AsadAliTech04" target="_blank" className="contact--social--links">
-                                <FaGithub />
+                            <a href="https://www.instagram.com/betacommunes/" target="_blank" className="contact--social--links">
+                                <FaInstagram />
                             </a>
-                            <a href="https://www.linkedin.com/in/asad-ali-038242235" target="_blank" className="contact--social--links">
+                            <a href="#" target="_blank" className="contact--social--links">
                                 <FaLinkedin />
                             </a>
                         </div>
@@ -67,16 +68,16 @@ const Footer = () => {
                     </div>
                     </div>
                     <div className="footer--socials-mobileView">
-                            <a href="https://www.facebook.com/asadalitech04" target="_blank" className="contact--social--links">
+                            <a href="https://www.facebook.com/profile.php?id=61554057222085&mibextid=zLoPMf" target="_blank" className="contact--social--links">
                                 <FaFacebookF />
                             </a>
-                            <a href="https://wa.link/sbf5f6" target="_blank" className="contact--social--links">
+                            <a href="https://wa.me/+923271519404" target="_blank" className="contact--social--links">
                                 <FaWhatsapp />
                             </a>
-                            <a href="https://github.com/AsadAliTech04" target="_blank" className="contact--social--links">
-                                <FaGithub />
+                            <a href="https://www.instagram.com/betacommunes/" target="_blank" className="contact--social--links">
+                                <FaInstagram />
                             </a>
-                            <a href="https://www.linkedin.com/in/asad-ali-038242235" target="_blank" className="contact--social--links">
+                            <a href="#" target="_blank" className="contact--social--links">
                                 <FaLinkedin />
                             </a>
                         </div>

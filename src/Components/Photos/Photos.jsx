@@ -12,7 +12,7 @@ const Photos = () => {
       {team.map(({ img, name, desc }, index) => {
         return (
           <div className="project-item" key={index}>
-            <img src={img} alt="" className="project-img" />
+            <img src={img} alt="" className="teamproject-img" />
             <span className="project-title">{name}</span>
             <p className="project-desc">{desc}</p>
           </div>

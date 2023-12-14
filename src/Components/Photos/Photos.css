@@ -10,6 +10,7 @@
  .team-content {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin-top: 4rem;
@@ -17,6 +18,10 @@
     align-content: center;
     
 } 
+.teamproject-img{
+    height: 80%;
+    width: 100%;
+}
 
 
 
