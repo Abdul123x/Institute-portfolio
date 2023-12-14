@@ -3,7 +3,7 @@ import Mainbody from '../Mainbody/Mainbody';
 import Services from '../Services/Services';
 import Projects from '../Projects/Projects';
 import Letstalknum from '../Letstalk/Letstalknum';
-import Testimonial from '../Testimonial/Testimonial';
+// import Testimonial from '../Testimonial/Testimonial';
 
 
 const Home = () => {
@@ -13,7 +13,7 @@ const Home = () => {
        <Services />
        <Projects />
        <Letstalknum />
-      <Testimonial />    
+      {/* <Testimonial />     */}
   </div>
   )
 }

@@ -3,8 +3,7 @@ import "./Contact.css";
 import phone from "../../img/phone.png";
 import whattsapp from "../../img/whatsappp.png";
 import email from "../../img/email.png";
-import Navbar from "../Navbar/Navbar";
-import Footer from "../Footer/Footer";
+
 const Contact = () => {
   return (
     <>

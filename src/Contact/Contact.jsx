@@ -63,7 +63,7 @@ const Contact = () => {
   };
   return (
     <section className="contact section">
-      <h2 className="section--title">Get In <span>Touch</span></h2>
+      <h2 className="section--title">Get In <span style={{ color: "var( --purple-color" }} >Touch</span></h2>
       <div className="contact--container container">
         <div className="contact--data">
           <h3 className="contact--title">Don't be Shy !</h3>
@@ -106,7 +106,7 @@ const Contact = () => {
           </div>
         </div>
         <form className="contact--form" ref={form} onSubmit={sendEmail} >
-          <div className="form--input-group"> 
+          <div className="form--input-group">
             <div className="form--input-div">
               <input type="text"
                 placeholder='Your Name'

@@ -1,9 +1,9 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Days+One&family=Open+Sans:wght@400;500;600&family=Permanent+Marker&family=Poppins:wght@500;600;700;800&family=Rubik+Bubbles&family=Silkscreen&display=swap');
 
 
 :root {
     /*  colors */
-
+      --purple-color:#663399;
     --first-color: hsl(271, 76%, 53%);
     --title-color: hsl(0, 0%, 40%);
     --text-color: hsl(0, 0%, 50%);

@@ -9,7 +9,7 @@ const Mobileview = ({ setshow }) => {
     <div className="mobileview">
       <div className="top">
         <div className="logo">  
-          Retro <span className="commune">Commune</span>
+          Beta <span className="commune">Commune</span>
         </div>
         <div className="fatimes">
           <FaTimes onClick={() => { setshow(false) }} className='cross' />

@@ -1,7 +1,7 @@
 .aboutbodr{
     height: 90vh;
     width: 100%;
-    background: rgb(232, 108, 55);
+    background:var( --purple-color);
     display: flex;
     margin-top: 5rem;
 }

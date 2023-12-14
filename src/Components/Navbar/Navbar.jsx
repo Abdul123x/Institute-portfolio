@@ -4,8 +4,9 @@ import { FaBars } from "react-icons/fa"
 import { Link } from "react-router-dom";
 import Mobileview from "../Mobileview/Mobileview";
 import { useNavigate } from 'react-router-dom'
+import Logo from "../../img/betacommunes.png"
 
-
+  
 
 
 const Navbar = () => {
@@ -14,14 +15,15 @@ const Navbar = () => {
   const navigate = useNavigate();
 
 
-  return (
+  return (   
     <>
 
       <nav className="main">
 
         <div className="nav-content">
-          <div className="nav-logo" onClick={() => navigate("/")}>
-            Retro <span className="commune">Commune</span>
+          <div  className="nav-logo" onClick={() => navigate("/")}>
+            Beta <span className="commune">Communes</span>
+            {/* <img  src={Logo} alt="" /> */}
           </div>
           <div className="nav-list">
             <ul className="menu">
@@ -38,13 +40,14 @@ const Navbar = () => {
               <li onClick={() => navigate("/about")}>
               
                 About
-           
+            
                </li>  
+            
             </ul>
           </div>
           <div className="nav-button">
         
-              <button  onClick={() => navigate("/contact")} className="btnn">Contact Us</button>
+              <button  onClick={() => navigate("/contact")} className="btnn">Schedule your Consulation </button>
           
           </div>
           <div className="nav-icon">

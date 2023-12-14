@@ -28,10 +28,11 @@
     font-size: 25px;
     font-weight:700;
     color: white;
+    font-family: 'Permanent Marker' , sans-serif;
 
 }
 .logo>span{
-  color: rgb(232, 108, 55);
+  color: var( --purple-color);
 
 }
 .cross{
@@ -40,7 +41,7 @@
     color: white;
 }
 .cross:hover{
-  color: rgb(232, 108, 55) ;
+  color: var(--purple-color) ;
 }
 .middle{
     margin-top: 5rem;
@@ -49,7 +50,7 @@
 .line{
   width: 200px;
   height: 2px;
-  color:  rgb(232, 108, 55) ;
+  color: var(--purple-color) ;
  
 }
 .mobilemenu{
@@ -68,7 +69,7 @@ li{
   animation: slideLiPopUp 2s ease forwards;
 }
 li:hover{
-  color: rgb(232, 108, 55);
+  color: var(--purple-color);
 
 }
 

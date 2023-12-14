@@ -46,7 +46,7 @@ const Testimonial = () => {
               “Their ability to take my ideas and put them into this type of
               technology was phenomenal. I have a visual of what my app{" "}
             </p>
-          </div>
+          </div>  
         </div>
         <div>
           {" "}

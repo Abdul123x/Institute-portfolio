@@ -2,10 +2,15 @@ import React, { useState } from "react";
 import "./Services.css";
 import { service } from "../Data/Data";
 import parse from "html-react-parser"
+import Zoom from 'react-reveal/Zoom';
+
+
 
 const Services = () => {
 
   const [isHovered, setIsHovered] = useState(false);
+
+
 
   const handleMouseEnter = () => {
     setIsHovered(true);  
@@ -25,7 +30,9 @@ const Services = () => {
       >
         {service.map(({ img, text, title }, index) => {   
           return (
-            <>
+            <> 
+           
+              <Zoom>
               <div className="service-item" key={index}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
@@ -35,12 +42,14 @@ const Services = () => {
               {isHovered && <span className="text">{parse(text)}</span>}
 
               </div>
-
+              </Zoom> 
+           
+            
             </>
 
 
           )
-        })}
+        })}  
       </div>
 
     </div>

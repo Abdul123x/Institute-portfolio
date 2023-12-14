@@ -11,7 +11,7 @@
   }
 
   .section--title>span {
-    color: rgb(232, 108, 55);
+    color: var(--purple-color);
   }
 
   .contact--desc {
@@ -32,7 +32,7 @@
   }
 
   .contact--info .info--icon {
-    color: rgb(232, 108, 55);
+    color: var( --purple-color);
     ;
     font-size: var(--h2-font-size);
   }
@@ -64,7 +64,7 @@
   }
 
   .contact--social--links:hover {
-    background-color: rgb(232, 108, 55);
+    background-color: var( --purple-color);
     ;
     color: var(--text-white);
   }
@@ -91,7 +91,7 @@
   }
 
   .form--control:focus {
-    border-color: rgb(232, 108, 55);
+    border-color: var( --purple-color);
     ;
   }
 
@@ -107,7 +107,7 @@
     font-weight: 700;
     border: none;
     border-radius: 40px;
-    background: rgb(232, 108, 55);
+    background: var( --purple-color);
     color: #fff;
     height: 3rem;
     width: 10rem;

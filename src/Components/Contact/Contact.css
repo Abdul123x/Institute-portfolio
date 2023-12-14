@@ -27,7 +27,7 @@
     align-items: center;
     
     
-    background: rgb(232, 108, 55);
+    background: var(--purple-color);
     cursor: pointer;
     gap: 1rem;
 
@@ -53,7 +53,7 @@
 }
 
 .phone-ww:hover{
-    background: rgb(219, 133, 87);
+    background: var(--purple-color);
   
 }
 
@@ -113,11 +113,11 @@ textarea{
    border-radius: 10px;
    outline: none;
    border: none;
-   background:rgb(232, 108, 55) ;
+   background: var(--purple-color) ;
    font-size: 1.5rem;
 }
 .submit:hover{
-    background: rgb(219, 133, 87);
+    background: var(--purple-color);
     cursor: pointer;
 }
 
@@ -210,8 +210,9 @@ textarea{
        border-radius: 10px;
        outline: none;
        border: none;
-       background:rgb(232, 108, 55) ;
+       background: var(--purple-color) ;
        font-size: 1rem;
     }
      
 }
+ 
