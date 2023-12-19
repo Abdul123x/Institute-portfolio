@@ -68,7 +68,7 @@ const Mainbody = () => {
           </p>
         </p>
         <div className="content">
-          <p>Elevating businesses since 2022, we've crafted cutting-edge IT solutions for global success. Transform your digital journey with us today!</p>
+          <p>Elevating businesses since 2022, we've crafted cutting-edge IT solutions for global success.<br/> Transform your digital journey with us today!</p>
         </div>
         <div className="button">
           <button className="workwithus" onClick={()=> navigate('/contact')} >

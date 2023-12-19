@@ -28,7 +28,7 @@ export const team = [
     id: 2,
     img: Asad,
     name: "Abdul Rehman",
-    desc: "Co-Founder | Frontend  Developer",
+    desc: "Co-Founder | React Developer",
   },
   {
     id: 3,

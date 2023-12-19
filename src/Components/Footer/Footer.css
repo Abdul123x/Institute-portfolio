@@ -22,7 +22,14 @@
     font-family: 'Permanent Marker' , sans-serif;
   
 }
-
+.logodes{
+  display: flex;
+  margin-top: 2rem;
+}
+.logo2>img{
+  height: 8rem;
+  width: 8rem;
+}
 .footer-content{
     display: flex;
     flex-direction: column;

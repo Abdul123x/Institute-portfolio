@@ -9,7 +9,7 @@ import {
     FaLinkedin,
     FaInstagram
 } from "react-icons/fa";
-import Logo from "../../img/logo.png"
+import logo2 from "../../img/logo2.png"
 import { useNavigate } from 'react-router-dom';
 
 const Footer = () => {
@@ -18,7 +18,10 @@ const Footer = () => {
         <footer>
             <div className="footer">
                 <div className="footer-left">
+                    <div className='logodes'>
+                    <span className='logo2'><img src={logo2} alt="" /></span>
                     <span className="footer-title">Bridging <span>Innovation</span>  , Building <span>Communities</span> </span>
+                    </div>
                     <div className="footer-content">
                         <div className="footer-logo">
                             <div className="f-logo">
