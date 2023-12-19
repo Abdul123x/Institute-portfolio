@@ -22,25 +22,25 @@ export const team = [
     id: 1,
     img: Asad,
     name: "Asad Ali Hanif ",
-    desc: "Co-Founder | MERN Stack",
+    desc: "Co-Founder | Full Stack Developer",
   },
   {
     id: 2,
     img: Asad,
     name: "Abdul Rehman",
-    desc: "  Co-Founder | React Developer",
+    desc: "Co-Founder | Frontend  Developer",
   },
   {
     id: 3,
     img: sheeza,
-    name: "Sheeza Rehman",
-    desc: "  Co-Founder | Social Media Marketing",
+    name: "Sheeza Rehmman",
+    desc: "Co-Founder | Digital Marketer",
   },
   {
     id: 3,
     img: Hassan,
     name: "Hassaan Khalil",
-    desc: "Graphics Designer",
+    desc: "Graphics Designer | UI / UX",
   },
   {
     id: 4,
@@ -53,7 +53,7 @@ export const team = [
     id: 5,
     img: Ghulam,
     name: "Ghulam Ali",
-    desc: "Search Engine Optimization",
+    desc: "SEO Expert",
   },
 ];
 

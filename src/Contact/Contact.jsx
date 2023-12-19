@@ -1,6 +1,8 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import emailjs from '@emailjs/browser';
 import { useRef, useState } from 'react';
+import { useLocation } from "react-router-dom"
+
 
 
 import {
@@ -16,6 +18,12 @@ import "./Contact.css";
 
 const Contact = () => {
 
+
+  const { pathName } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathName])
+  
   const [formData, setFormData] = useState({
     from_name: '',
     from_email: '',
@@ -41,12 +49,15 @@ const Contact = () => {
 
   const form = useRef();
   const [done, setDone] = useState(false);
+  const [loading, setLoading] = useState(false);
+  
 
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setLoading(true);
 
-    emailjs.sendForm('service_a5naz05', 'template_prby4pf', form.current, 'wNKUDWsWhwXQwh04H')
+    emailjs.sendForm('service_3poozu9', 'template_122jbau', form.current, 'UBEOeq2SLpuLBcSOZ')
       .then((result) => {
         console.log(result.text);
         setDone(true);
@@ -57,8 +68,11 @@ const Contact = () => {
           from_subject: '',
           message: '',
         });
+
+        setLoading(false);
       }, (error) => {
         console.log(error.text);
+        setLoading(false);
       });
   };
   return (
@@ -146,9 +160,11 @@ const Contact = () => {
             ></textarea>
           </div>
           <button className='contact-button' type='submit' >
-            Send Message
+          {loading ? 'Sending...' : 'Send Message'}
           </button><br />
-          <span >{done && "Thanks for contacting me !"}</span>
+          <span >{done && <span style={{display: "flex" , alignItems: "center" ,
+           justifyContent:"center" , marginTop: "10px" , color : "green"
+            , fontWeight:"bold"}}>Thanks for contacting me !</span>}</span>
         </form>
       </div>
     </section>

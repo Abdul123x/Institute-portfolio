@@ -10,6 +10,7 @@
        text-align: center;
        font-size: 30px;
        font-weight: 700;
+       font-family: 'Permanent Marker' , sans-serif;
 }  
 .title>span{
     color:  var(--purple-color);
@@ -39,8 +40,10 @@
     text-align: center;
     margin-top: 1rem;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 500;
     cursor: pointer;
+    font-family: "Rubik Lines" , sans-serif;
+    
 }
 
 
@@ -55,7 +58,11 @@
     font-size: 14px;
     bottom: -100%;  
     transition: bottom 0.3s ease-in-out;
-    transition: transform 0.5s ease-in-out; 
+    transition: transform 0.5s ease-in-out;
+    width: 200px;
+    height: 100px;
+    word-break: break-word;
+    text-align: center;
    
     
     
@@ -76,6 +83,9 @@
     .service-img{
         width: 160px;
         cursor: pointer;
+    }
+    .text{
+        bottom: -120px;
     }
 
 

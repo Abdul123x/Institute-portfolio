@@ -24,7 +24,7 @@ const Projects = () => {
                 onClick={() => window.open(link, '_blank')}
               >Open</button>
             </div>
-       
+        
             </Fade>
           )  
         })}

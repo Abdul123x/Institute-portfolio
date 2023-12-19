@@ -77,3 +77,25 @@
         
     }
 }
+@media screen and (max-width:340px){
+    .leftsidede>span{
+        font-weight: 900;
+        font-size: 2rem;
+    }  
+    .leftsidede>p{
+        margin-top: 1rem;
+        font-size: 14px;
+        color: #fff;
+        font-weight: 300;
+        word-break: break-word;
+    }
+    .leftsidede{
+        margin-top: 10rem;
+        margin-left: 2rem;
+    }
+    .rightsidees{
+        margin-left: 2rem;
+        
+        
+    }
+}

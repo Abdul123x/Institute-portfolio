@@ -11,7 +11,7 @@
 .moreproject-content {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
     justify-content: space-between;
     align-items: center;
     margin-top: 4rem;

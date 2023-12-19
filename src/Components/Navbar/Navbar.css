@@ -52,6 +52,7 @@
 li{
   cursor: pointer;
   list-style: none;
+  font-family: "Rubik Lines" , sans-serif;
 
 }
 
@@ -81,7 +82,7 @@ li{
 
 @media screen and (max-width:358px){
 .nav-logo{
-  font-size: 20px;
+  font-size: 23px;
 }
 }
 
@@ -98,7 +99,7 @@ li{
       visibility: visible;
       display: block;
       width: 25px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 700;
      align-items: center;
      cursor: pointer;

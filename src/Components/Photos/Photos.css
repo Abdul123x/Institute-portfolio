@@ -19,8 +19,9 @@
     
 } 
 .teamproject-img{
-    height: 80%;
-    width: 100%;
+    
+    width: calc(100% - 20%);
+    height: calc(100% - 35%);
 }
 
 
@@ -45,3 +46,11 @@
    
 
 } 
+@media screen and (max-width:340px){
+    .teamproject-img{
+    
+        width: calc(100% - 30%);
+        height: calc(100% - 45%);
+    }
+    
+}

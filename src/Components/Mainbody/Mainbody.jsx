@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import GLOBE from 'vanta/dist/vanta.globe.min';
 import Typewriter from 'typewriter-effect';
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -15,6 +16,7 @@ import './Mainbody.css'
 const Mainbody = () => {
   const [vantaEffect, setVantaEffect] = useState(null)
   const vantaRef = useRef(null);
+  const navigate = useNavigate();
 
 
 
@@ -55,7 +57,7 @@ const Mainbody = () => {
           <p>
             <Typewriter
               options={{
-                strings: ['THINK P<span style="color:  #663399;;" >A</span>RTNER', 'N<span  style="color:#663399;;" >O</span>T AGENCY'],
+                strings: ['BRID<span style="color:  #663399 ;" >G</span>ING<br/> I<span style="color:  #663399 ;" >N</span>NOVATION', 'B<span  style="color:#663399;;" >U</span>ILDING<br/> COMM<span style="color:  #663399 ;" >U</span>NITIES'],
                 autoStart: true,
                 loop: true,
                 cursor: '|',
@@ -66,10 +68,10 @@ const Mainbody = () => {
           </p>
         </p>
         <div className="content">
-          <p>Since 2022, we've helped lauch 8+ next-generation apps for startups  <br/> and growing companines around the world. Let's Make It App'n!®</p>
+          <p>Elevating businesses since 2022, we've crafted cutting-edge IT solutions for global success. Transform your digital journey with us today!</p>
         </div>
         <div className="button">
-          <button className="workwithus">
+          <button className="workwithus" onClick={()=> navigate('/contact')} >
             Work With Us
           </button>
         </div>
