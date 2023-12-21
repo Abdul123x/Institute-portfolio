@@ -109,14 +109,15 @@
     .leftsidede>p {
         margin-top: 1rem;
         font-size: 14px;
-        color: #fff;
+       
         font-weight: 300;
         word-break: break-word;
+        text-align: center;
     }
 
     .leftsidede {
         margin-top: 10rem;
-        margin-left: 2rem;
+    
     }
 
     .rightsidees {
