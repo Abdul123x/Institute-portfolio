@@ -16,43 +16,44 @@ import Ghulam from "../../img/ghulamali.jpg";
 import amazingviralnews from "../../img/amazingviral.png";
 import peacetransporation from "../../img/peacetransportation.png";
 import gmcreatives from "../../img/gmcreatives.png";
+import Abdulrehman from "../../img/mani.jpg"
 
 export const team = [
   {
     id: 1,
     img: Asad,
-    name: "Asad Ali Hanif ",
+    name: "Asad <span> Ali </span>  ",
     desc: "Co-Founder | Full Stack Developer",
   },
   {
     id: 2,
-    img: Asad,
-    name: "Abdul Rehman",
+    img: Abdulrehman ,
+    name: "Abdul <span> Rehman </span>",
     desc: "Co-Founder | React Developer",
   },
   {
     id: 3,
     img: sheeza,
-    name: "Sheeza Rehmman",
+    name: "Sheeza <span> Rehmman </span> ",
     desc: "Co-Founder | Digital Marketer",
   },
   {
     id: 3,
     img: Hassan,
-    name: "Hassaan Khalil",
+    name: "Hassaan <span> Khalil </span> ",
     desc: "Graphics Designer | UI / UX",
   },
   {
     id: 4,
     img: Abdullah,
-    name: "Abdullah Zubair",
+    name: "Abdullah <span> Zubair </span> ",
     desc: "Graphics Designer",
   },
 
   {
     id: 5,
     img: Ghulam,
-    name: "Ghulam Ali",
+    name: "Ghulam <span> Ali",
     desc: "SEO Expert",
   },
 ];
@@ -66,7 +67,7 @@ export const experience = [
   },
   {
     id: 2,
-    year: "3 ",
+    year: "5",
     title: "Projects delivered",
     desc: "In the last three months",
   },

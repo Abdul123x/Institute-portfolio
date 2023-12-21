@@ -47,7 +47,7 @@ const Navbar = () => {
           </div>
           <div className="nav-button">
         
-              <button  onClick={() => navigate("/contact")} className="btnn">Schedule your Consulation </button>
+              <button  onClick={() => navigate("/contact")} className="btnn">Collaborate with Experts </button>
           
           </div>
           <div className="nav-icon">

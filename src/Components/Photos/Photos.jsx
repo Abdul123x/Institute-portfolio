@@ -1,6 +1,7 @@
 import React from "react";
 import "./Photos.css";
 import { team } from "../Data/Data";
+import parse from "html-react-parser";
 
 const Photos = () => {
   return (
@@ -13,7 +14,7 @@ const Photos = () => {
         return (
           <div className="project-item" key={index}>
             <img src={img} alt="" className="teamproject-img" />
-            <span className="project-title">{name}</span>
+            <span className="project-title">{parse(name)}</span>
             <p className="project-desc">{desc}</p>
           </div>
         )  

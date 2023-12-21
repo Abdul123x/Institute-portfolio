@@ -2,6 +2,7 @@ import React, {useEffect} from 'react'
 import emailjs from '@emailjs/browser';
 import { useRef, useState } from 'react';
 import { useLocation } from "react-router-dom"
+import Contactvideo from "../../src/videos/contact.mp4"
 
 
 
@@ -77,7 +78,19 @@ const Contact = () => {
   };
   return (
     <section className="contact section">
-      <h2 className="section--title">Get In <span style={{ color: "var( --purple-color" }} >Touch</span></h2>
+       <div className="contact-video">
+       <video autoPlay loop muted className="backgroundVideo">
+          <source src={Contactvideo} type="video/mp4" />
+        </video>
+        <div className="contact-video-info">
+        <h2 className="section--title">Get In <span style={{ color: "var( --purple-color" }} >Touch</span></h2>
+        <p className="contact--desc">
+            Feel free to get in touch with us .We are always open to discussing
+            new projects, creative ideas or opportunities to be part of your
+            visions..
+          </p>
+        </div>
+       </div>
       <div className="contact--container container">
         <div className="contact--data">
           <h3 className="contact--title">Don't be Shy !</h3>

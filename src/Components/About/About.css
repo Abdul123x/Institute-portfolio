@@ -1,34 +1,55 @@
 .aboutbodr{
-    height: 90vh;
     width: 100%;
-    background:var( --purple-color);
+    height: 100%;
+    position: relative;
+
+   
+}
+.backgroundVideo {
+  
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+  }
+
+
+.leftsidede {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
-    margin-top: 5rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-
-.leftsidede{
-    margin-top: 10rem;
-    margin-left: 5rem;
-}
-.leftsidede>span{
+.leftsidede>span {
     font-weight: 900;
-    font-size: 2rem;
-}  
-.leftsidede>p{
-    font-size: 1.5rem;
-    color: #fff;
-    font-weight: 300;
+    font-size: 40px;
+    color:var( --purple-color);
 }
 
-.getintouch{
+.leftsidede>p {
+    font-size: 20px;
+    color: rgb(58, 57, 57);
+    font-weight: 500;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.getintouch {
     margin-top: 2rem;
     background: transparent;
     border: none;
     outline: none;
     cursor: pointer;
-    color: #fff;
-    border: 1px solid #fff;
+    color:  var(--purple-color);
+    border: 2px solid var(--purple-color);
     height: 4rem;
     width: 9rem;
     border-radius: 10px;
@@ -36,26 +57,27 @@
     font-weight: bold;
 }
 
-.getintouch:hover{
-    background: #fff;
-    color: black;
+.getintouch:hover {
+    background: var(--purple-color);
+    color: white;
+    border: none;
 }
 
-.aboutbodr{
+.aboutbodr {
     display: flex;
     flex-direction: row;
 }
 
-.rightsidees{
+.rightsidees {
     margin-top: 6rem;
     margin-left: 3rem;
     height: 40vh;
     width: 45vw;
     border-radius: 10px;
-    
+
 }
 
-.rightsidees>img{
+.rightsidees>img {
     height: 100%;
     width: 100%;
     background-position: center;
@@ -65,37 +87,41 @@
 
 
 @media screen and (max-width:768px) {
-    .aboutbodr{
-        height: 130vh;
+    .aboutbodr {
+        height: 100vh;
         flex-direction: column;
     }
-   
 
-    .rightsidees{
+
+    .rightsidees {
         height: 20rem;
         width: 80vw;
-        
+
     }
 }
-@media screen and (max-width:340px){
-    .leftsidede>span{
+
+@media screen and (max-width:340px) {
+    .leftsidede>span {
         font-weight: 900;
         font-size: 2rem;
-    }  
-    .leftsidede>p{
+    }
+
+    .leftsidede>p {
         margin-top: 1rem;
         font-size: 14px;
         color: #fff;
         font-weight: 300;
         word-break: break-word;
     }
-    .leftsidede{
+
+    .leftsidede {
         margin-top: 10rem;
         margin-left: 2rem;
     }
-    .rightsidees{
+
+    .rightsidees {
         margin-left: 2rem;
-        
-        
+
+
     }
 }

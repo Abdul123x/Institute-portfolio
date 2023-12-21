@@ -10,7 +10,7 @@ const Letstalknum = () => {
   return (
     <div className="experience">
       <div className="title">
-        LET'S <span>TALK</span>  NUMBERS
+      Innovation <span>Index</span> 
         </div> 
         <div className="exper-content">
             {experience.map(({year, title , desc} , index) => {

@@ -23,7 +23,8 @@ const Services = () => {
   return (
     <div className="services">
       <div className="title">   
-        Our <span> Services</span>   
+      
+      Digital <span> Proficiencies</span>   
       </div>
       <div className="service-content"
 

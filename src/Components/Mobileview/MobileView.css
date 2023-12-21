@@ -64,11 +64,12 @@
     font-weight: 500;
     color: white;
 }
-li{
+.mobilemenu>li{
   transform: translateX(100%); 
   animation: slideLiPopUp 2s ease forwards;
 }
-li:hover{
+
+.mobilemenu>li:hover{
   color: var(--purple-color);
 
 }

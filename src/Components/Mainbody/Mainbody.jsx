@@ -72,7 +72,7 @@ const Mainbody = () => {
         </div>
         <div className="button">
           <button className="workwithus" onClick={()=> navigate('/contact')} >
-            Work With Us
+          Connect for Excellence
           </button>
         </div>
       </div>

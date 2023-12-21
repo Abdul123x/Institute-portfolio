@@ -49,12 +49,17 @@
   font-weight: 700;
 
 }
-li{
+.menu>li{
   cursor: pointer;
   list-style: none;
   font-family: "Rubik Lines" , sans-serif;
-
+  transform: translateX(100%); 
+  animation: slideLiPopUp 2s ease forwards;
 }
+.menu>li:hover{
+  color: var(--purple-color);
+}
+
 
 
 .btnn{

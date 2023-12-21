@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Days+One&family=Lilita+One&family=Lobster&family=Open+Sans:wght@400;500;600&family=Permanent+Marker&family=Poppins:wght@500;600;700;800&family=Rubik+Bubbles&family=Rubik+Lines&family=Silkscreen&display=swap');
 
 
+
 :root {
     /*  colors */
       --purple-color:#663399;
@@ -50,7 +51,7 @@
     gap: 30px;
   }
   .section{
-    padding-block: 70px;
+    padding-block: 10px;
   }
   .section--title span{
     color: rgb(232, 108, 55);;
@@ -60,7 +61,7 @@
     font-size: 56px;
     font-weight: 800;
     text-align: center;
-    margin-bottom: 70px;
+    margin-bottom: 10px;
   }
 
  
