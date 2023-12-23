@@ -85,7 +85,7 @@
  display: none;
 }
 
-@media screen and (max-width:358px){
+@media screen and (max-width:400px){
 .nav-logo{
   font-size: 23px;
 }

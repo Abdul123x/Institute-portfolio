@@ -5,6 +5,8 @@ import Letstalknum from '../Letstalk/Letstalknum'
 import Photos from '../Photos/Photos'
 import { useLocation, useNavigate } from "react-router-dom"
 import Aboutvideo from "../../videos/about.mp4"
+import { Helmet } from "react-helmet"
+
 
 
 const About = () => {
@@ -15,7 +17,12 @@ const About = () => {
   }, [pathName])
   return (
 
+
     <div className="About-sec">
+      <Helmet>
+        <title>Beta Communes - About Us</title>
+        <meta name="description" content=" Elevating businesses since 2022, we've crafted cutting-edge IT solutions for global success.| Transform your digital journey with us today!" />
+      </Helmet>
 
       <div className="aboutbodr">
         <video autoPlay loop muted className="backgroundVideo">

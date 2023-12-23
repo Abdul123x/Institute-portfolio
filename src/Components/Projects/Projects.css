@@ -152,7 +152,7 @@
     
 
 
-@media screen and (max-width:340px) {
+@media screen and (max-width:400px) {
     .project-item {
         width: 35vh;
         margin: 0;

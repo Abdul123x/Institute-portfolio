@@ -1,8 +1,10 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 import emailjs from '@emailjs/browser';
 import { useRef, useState } from 'react';
 import { useLocation } from "react-router-dom"
 import Contactvideo from "../../src/videos/contact.mp4"
+import { Helmet } from "react-helmet"
+
 
 
 
@@ -24,7 +26,7 @@ const Contact = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathName])
-  
+
   const [formData, setFormData] = useState({
     from_name: '',
     from_email: '',
@@ -51,7 +53,7 @@ const Contact = () => {
   const form = useRef();
   const [done, setDone] = useState(false);
   const [loading, setLoading] = useState(false);
-  
+
 
 
   const sendEmail = (e) => {
@@ -78,19 +80,23 @@ const Contact = () => {
   };
   return (
     <section className="contact section">
-       <div className="contact-video">
-       <video autoPlay loop muted className="backgroundVideo">
+      <Helmet>
+        <title>Beta Communes - Contact Us</title>
+        <meta name="description" content=" Elevating businesses since 2022, we've crafted cutting-edge IT solutions for global success.| Transform your digital journey with us today!" />
+      </Helmet>
+      <div className="contact-video">
+        <video autoPlay loop muted className="backgroundVideo">
           <source src={Contactvideo} type="video/mp4" />
         </video>
         <div className="contact-video-info">
-        <h2 className="section--title">Get In <span style={{ color: "var( --purple-color" }} >Touch</span></h2>
-        <p className="contact--desc">
+          <h2 className="section--title">Get In <span style={{ color: "var( --purple-color" }} >Touch</span></h2>
+          <p className="contact--desc">
             Feel free to get in touch with us .We are always open to discussing
             new projects, creative ideas or opportunities to be part of your
             visions..
           </p>
         </div>
-       </div>
+      </div>
       <div className="contact--container container">
         <div className="contact--data">
           <h3 className="contact--title">Don't be Shy !</h3>
@@ -173,11 +179,13 @@ const Contact = () => {
             ></textarea>
           </div>
           <button className='contact-button' type='submit' >
-          {loading ? 'Sending...' : 'Send Message'}
+            {loading ? 'Sending...' : 'Send Message'}
           </button><br />
-          <span >{done && <span style={{display: "flex" , alignItems: "center" ,
-           justifyContent:"center" , marginTop: "10px" , color : "green"
-            , fontWeight:"bold"}}>Thanks for contacting me !</span>}</span>
+          <span >{done && <span style={{
+            display: "flex", alignItems: "center",
+            justifyContent: "center", marginTop: "10px", color: "green"
+            , fontWeight: "bold"
+          }}>Thanks for contacting me !</span>}</span>
         </form>
       </div>
     </section>
