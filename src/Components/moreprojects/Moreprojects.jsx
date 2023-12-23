@@ -18,7 +18,7 @@ const Moreprojects = () => {
   const navigate = useNavigate();
   return (
     <div className="moreproject">
-       <Helmet>
+       <Helmet>    
         <title>Beta Communes - Portfolio</title>
         <meta name="description" content=" Elevating businesses since 2022, we've crafted cutting-edge IT solutions for global success.| Transform your digital journey with us today!" />
       </Helmet>
