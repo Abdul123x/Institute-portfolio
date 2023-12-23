@@ -3,7 +3,8 @@ import emailjs from '@emailjs/browser';
 import { useRef, useState } from 'react';
 import { useLocation } from "react-router-dom"
 import Contactvideo from "../../src/videos/contact.mp4"
-import { Helmet } from "react-helmet"
+import { Helmet } from 'react-helmet';
+
 
 
 

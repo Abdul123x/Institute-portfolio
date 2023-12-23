@@ -3,10 +3,11 @@ import "./Moreprojects.css";
 import { moreprojects } from "../Data/Data";
 import parse from "html-react-parser";
 import Fade from 'react-reveal/Fade';
-import { useNavigate } from "react-router-dom";
+
 import { useLocation } from "react-router-dom"
 import portfolioVideo from "../../videos/portfolio.mp4"
-import { Helmet } from "react-helmet"
+import { Helmet } from "react-helmet";
+
 
 
 const Moreprojects = () => {
@@ -18,7 +19,7 @@ const Moreprojects = () => {
   
   return (
     <div className="moreproject">
-       <Helmet>    
+        <Helmet>
         <title>Beta Communes - Portfolio</title>
         <meta name="description" content=" Elevating businesses since 2022, we've crafted cutting-edge IT solutions for global success.| Transform your digital journey with us today!" />
       </Helmet>

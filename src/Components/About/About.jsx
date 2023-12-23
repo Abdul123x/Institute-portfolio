@@ -5,7 +5,7 @@ import Letstalknum from '../Letstalk/Letstalknum'
 import Photos from '../Photos/Photos'
 import { useLocation, useNavigate } from "react-router-dom"
 import Aboutvideo from "../../videos/about.mp4"
-import { Helmet } from "react-helmet"
+import { Helmet } from 'react-helmet'
 
 
 
