@@ -22,7 +22,7 @@ const Moreprojects = () => {
         <title>Beta Communes - Portfolio</title>
         <meta name="description" content=" Elevating businesses since 2022, we've crafted cutting-edge IT solutions for global success.| Transform your digital journey with us today!" />
       </Helmet>
-      <div className="project-video">
+      <div className="project-video">  
       <video autoPlay loop muted className="backgroundVideo">
         <source src={portfolioVideo} type="video/mp4" />
       </video>
