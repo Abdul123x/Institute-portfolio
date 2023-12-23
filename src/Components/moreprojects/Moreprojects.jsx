@@ -15,7 +15,7 @@ const Moreprojects = () => {
     window.scrollTo(0, 0);
   }, [pathName])
 
-  const navigate = useNavigate();
+  
   return (
     <div className="moreproject">
        <Helmet>    
