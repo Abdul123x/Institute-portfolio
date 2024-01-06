@@ -120,7 +120,7 @@
   .form--control {
     border: 1px solid var(--container-color);
     background-color: var(--container-color);
-    color: var(--title-color);
+    color: var(--title-color) !important;
     width: 100%;
     padding: 12px 24px;
     border-radius: 30px;
@@ -131,6 +131,9 @@
   .form--control:focus {
     border-color: var(--purple-color);
     ;
+  }
+  .form--control::placeholder{
+    color: var(--title-color);
   }
 
   .textarea {
